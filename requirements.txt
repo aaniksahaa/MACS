@@ -1,0 +1,8 @@
+# PyTorch: install the build for your CUDA first (https://pytorch.org); tested with torch 2.10 and 2.14
+torch>=2.1
+torchvision
+numpy
+scipy
+scikit-learn
+pillow
+tqdm
