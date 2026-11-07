@@ -24,6 +24,10 @@ pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
 pip install -r requirements.txt
 ```
 
+To reproduce the exact software environment of most reported runs (Python 3.12, PyTorch 2.11, CUDA 12.8), use
+`conda env create -f environment.yml` instead. Every run also records its Python, PyTorch and CUDA versions and the
+code commit in `result.json`.
+
 ## Datasets
 
 The 14 preprocessed datasets of the paper (9 membrane and 5 mitochondria domains, each split into train,

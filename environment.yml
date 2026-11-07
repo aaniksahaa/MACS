@@ -1,0 +1,20 @@
+# Exact software environment of most reported MACS runs (Python 3.12, PyTorch 2.11 with CUDA 12.8).
+# The reported runs also used PyTorch 2.5.1, 2.9.1 and 2.14.1 (Python 3.11 to 3.14); every run records its own
+# Python, PyTorch and CUDA versions and the code commit in result.json.
+#   conda env create -f environment.yml && conda activate macs
+# For another CUDA version, change the PyTorch index URL below (see https://pytorch.org).
+name: macs
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12.13
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu128
+      - torch==2.11.0
+      - torchvision==0.26.0
+      - numpy==2.4.4
+      - scipy==1.18.0
+      - scikit-learn==1.7.2
+      - pillow==12.2.0
+      - tqdm==4.69.0

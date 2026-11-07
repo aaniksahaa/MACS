@@ -1,4 +1,5 @@
-# PyTorch: install the build for your CUDA first (https://pytorch.org); tested with torch 2.10 and 2.14
+# PyTorch: install the build for your CUDA first (https://pytorch.org); the reported runs used torch 2.5 to 2.14.
+# environment.yml pins the exact versions of most reported runs.
 torch>=2.1
 torchvision
 numpy
